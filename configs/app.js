@@ -16,9 +16,9 @@ module.exports = function () {
     create = (config) => {
         let routes = require('../routes');
         //set all the server settings
-        server.set('env',config.env);
-        server.set('port',config.port);
-        server.set('hostname',config.hostname);
+        server.set('env',config.ENV);
+        server.set('port',config.PORT);
+        server.set('hostname',config.HOST);
 
         //middleware to parse to json
         server.use(bodyParser.json());

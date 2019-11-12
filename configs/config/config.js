@@ -2,9 +2,9 @@
 * config.js file
 *******/
 
-
+require('dotenv').config();
 const _ = require('lodash');
-const env = process.env.NODE_ENV || 'local';
+const env = process.env.EN|| 'local';
 const envConfig = require('./' + env);
 let defaultConfig = {
     env : env

@@ -6,10 +6,10 @@ const util = require('util');
 module.exports = function () {
     
     const connection = mysql.createConnection( {
-        host: "localhost",
-        user: "root",
-        password: "Papuaku15",
-        database: "reach_schema"
+        host: process.env.DB_HOST,
+        user: process.env.DB_USER,
+        password: process.env.DB_PASSWORD,
+        database: process.env.DB_DATABASE,
     } );
 
     let query,
